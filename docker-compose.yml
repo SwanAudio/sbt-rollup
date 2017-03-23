@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  scripted:
+    image: pitchplay/scala-dev:jdk8-web
+    command: '~scripted'
+    volumes:
+        - .:/usr/src/app
+        - /root/.ivy2

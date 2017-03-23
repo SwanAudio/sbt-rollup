@@ -1,0 +1,11 @@
+version: '2.1'
+services:
+  example:
+    image: pitchplay/scala-dev:jdk8-web
+    command: '~run'
+    volumes:
+        - .:/usr/src/app
+        - ..:/usr/src
+        - /root/.ivy2
+    ports:
+      - "8666:9000"
